@@ -1217,6 +1217,11 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@vincentgna/cdk8s-datadog@^0.0.2":
+  version "0.0.2"
+  resolved "https://npm.pkg.github.com/download/@vincentgna/cdk8s-datadog/0.0.2/795af2d6f64ccdcea17db6c0bc8fceb60b3998a5#795af2d6f64ccdcea17db6c0bc8fceb60b3998a5"
+  integrity sha512-oPvV6Q4/r566C4sa8AS/tDgZQv4TUkLkXvAxYRBbuSAxqTi4UfLty50VPPi6JDXgRZeF4RCpLrUC/TRIkG83xA==
+
 "@xmldom/xmldom@^0.8.10":
   version "0.8.10"
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.10.tgz#a1337ca426aa61cef9fe15b5b28e340a72f6fa99"

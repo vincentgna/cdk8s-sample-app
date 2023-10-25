@@ -6,7 +6,9 @@ const project = new cdk8s.Cdk8sTypeScriptApp({
   defaultReleaseBranch: "main",
   projenrcTs: true,
   prettier: true,
+  deps: ["@vincentgna/cdk8s-datadog"],
 });
+project.npmrc.addRegistry("https://npm.pkg.github.com/", "@vincentgna");
 new TextFile(project, ".nvmrc", {
   lines: ["v18"],
 });
