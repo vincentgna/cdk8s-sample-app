@@ -50,3 +50,5 @@ junit.xml
 !/.eslintrc.json
 !/cdk8s.yaml
 !/.nvmrc
+!/src/util/Types.generated.ts
+!/src/util/DatadogMonitorProps.generated.ts

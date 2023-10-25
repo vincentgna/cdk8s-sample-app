@@ -84,6 +84,10 @@
       "type": "build"
     },
     {
+      "name": "@mrgrain/jsii-struct-builder",
+      "type": "runtime"
+    },
+    {
       "name": "@vincentgna/cdk8s-datadog",
       "type": "runtime"
     },

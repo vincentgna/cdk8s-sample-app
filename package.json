@@ -41,6 +41,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@mrgrain/jsii-struct-builder": "^0.5.18",
     "@vincentgna/cdk8s-datadog": "^0.0.2",
     "cdk8s": "^2.3.33",
     "cdk8s-plus-25": "^2.0.0-rc.26",

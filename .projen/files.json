@@ -18,6 +18,8 @@
     ".projen/tasks.json",
     "cdk8s.yaml",
     "LICENSE",
+    "src/util/DatadogMonitorProps.generated.ts",
+    "src/util/Types.generated.ts",
     "tsconfig.dev.json",
     "tsconfig.json"
   ],

@@ -1,8 +1,8 @@
-import { DatadogMonitor } from "@vincentgna/cdk8s-datadog";
 import { Chart, Duration } from "cdk8s";
 import { Deployment } from "cdk8s-plus-25";
 import * as kplus from "cdk8s-plus-25";
 import { Construct } from "constructs";
+import { DatadogMonitor } from "./util";
 
 export interface SampleChartProps {
   /**
@@ -89,15 +89,10 @@ export class SampleChart extends Chart {
 
     // Trigger alert if CPU usage isn't resolved by autoscaling
     new DatadogMonitor(this, "CpuUtilizationMonitor", {
-      metadata: {
-        name: `${deployment.name}-cpu-utilisation`,
-      },
-      spec: {
-        name: "[CDK8s] podinfo pod cpu utilisation is too high, review Autoscaling triggers",
-        type: "metric alert",
-        query: `avg(last_5m):sum:docker.cpu.usage{kube_deployment:${deployment.name}} > ${cpuMonitorThreshold}`,
-        message: `CPU Usage over ${cpuMonitorThreshold} for the last 5min`,
-      },
+      type: "metric alert",
+      query: `avg(last_5m):sum:docker.cpu.usage{kube_deployment:${deployment.name}} > ${cpuMonitorThreshold}`,
+      name: "[CDK8s] podinfo pod cpu utilisation is too high, review Autoscaling triggers",
+      message: `CPU Usage over ${cpuMonitorThreshold} for the last 5min`,
     });
     const service = deployment.exposeViaService();
 
