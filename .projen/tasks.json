@@ -185,13 +185,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,cdk8s-cli,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,npm-check-updates,projen,ts-jest,ts-node,typescript,cdk8s-plus-22,cdk8s,constructs"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,cdk8s-cli,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,eslint,jest,jest-junit,npm-check-updates,prettier,projen,ts-jest,ts-node,typescript,cdk8s-plus-25,cdk8s,constructs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s-cli eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit npm-check-updates projen ts-jest ts-node typescript cdk8s-plus-22 cdk8s constructs"
+          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s-cli eslint-config-prettier eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint jest jest-junit npm-check-updates prettier projen ts-jest ts-node typescript cdk8s-plus-25 cdk8s constructs"
         },
         {
           "exec": "npx projen"
