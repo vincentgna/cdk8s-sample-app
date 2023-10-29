@@ -84,6 +84,10 @@
       "type": "build"
     },
     {
+      "name": "@vincentgna/cdk8s-datadog",
+      "type": "runtime"
+    },
+    {
       "name": "cdk8s-plus-25",
       "version": "^2.0.0-rc.26",
       "type": "runtime"
