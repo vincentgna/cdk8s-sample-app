@@ -89,15 +89,10 @@ export class SampleChart extends Chart {
 
     // Trigger alert if CPU usage isn't resolved by autoscaling
     new DatadogMonitor(this, "CpuUtilizationMonitor", {
-      metadata: {
-        name: `${deployment.name}-cpu-utilisation`,
-      },
-      spec: {
-        name: "[CDK8s] podinfo pod cpu utilisation is too high, review Autoscaling triggers",
-        type: "metric alert",
-        query: `avg(last_5m):sum:docker.cpu.usage{kube_deployment:${deployment.name}} > ${cpuMonitorThreshold}`,
-        message: `CPU Usage over ${cpuMonitorThreshold} for the last 5min`,
-      },
+      name: "[CDK8s] podinfo pod cpu utilisation is too high",
+      type: "metric alert",
+      query: `avg(last_5m):sum:docker.cpu.usage{kube_deployment:${deployment.name}} > ${cpuMonitorThreshold}`,
+      message: `CPU Usage over ${cpuMonitorThreshold} for the last 5min, review Autoscaling triggers`,
     });
     const service = deployment.exposeViaService();
 
