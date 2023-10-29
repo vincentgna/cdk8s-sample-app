@@ -22,7 +22,7 @@ export class SampleChart extends Chart {
     const deployment = new Deployment(this, "Deployment");
 
     // https://docs.datadoghq.com/containers/kubernetes/tag/?tab=containerizedagent#tag-autodiscovery
-    deployment.metadata.addAnnotation(
+    deployment.podMetadata.addAnnotation(
       "ad.datadoghq.com/tags",
       JSON.stringify({
         SAMPLE_TAG: "foo",
