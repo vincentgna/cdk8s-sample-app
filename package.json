@@ -41,7 +41,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@vincentgna/cdk8s-datadog": "^0.0.2",
+    "@vincentgna/cdk8s-datadog": "^0.0.3",
     "cdk8s": "^2.3.33",
     "cdk8s-plus-25": "^2.0.0-rc.26",
     "constructs": "^10.1.42"

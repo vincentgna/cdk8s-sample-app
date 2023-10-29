@@ -8,7 +8,6 @@ yarn
 
 alias pj="npx projen@latest"
 pj build
-pj synth
 ```
 
 ## Deploy
